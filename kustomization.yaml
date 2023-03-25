@@ -5,6 +5,7 @@ helmCharts:
   version: latest
   repo: https://ultrajeff.github.io/helm-charts
   namespace: user1-bgd
+  valuesFile: values.yaml
 patches:
 - patch: |-
     - op: add
