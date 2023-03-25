@@ -5,7 +5,7 @@ helmCharts:
   version: latest
   repo: https://ultrajeff.github.io/helm-charts
   valuesFile: values.yaml
-  namespace: openshift-gitops
+  namespace: user1-bgd
   releaseName: simple-vue-app
 patches:
 - patch: |-
