@@ -5,6 +5,6 @@ labels:
    app.kubernetes.io/part-of: argocd
 metadata:
   name: argocd-cm
-  namespace: user1-argocd
+  namespace: argocd
 data:
-  kustomize.buildOptions: --enable-alpha-plugins --enable-helm --load-restrictor LoadRestrictionsNone
+  kustomize.buildOptions: --enable-helm
