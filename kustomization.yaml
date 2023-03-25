@@ -4,7 +4,7 @@ helmCharts:
 - name: simple-vue-app
   version: latest
   repo: https://ultrajeff.github.io/helm-charts
-  valuesFile: values.yaml
+  # valuesFile: values.yaml
   namespace: user1-bgd
   releaseName: simple-vue-app
 patches:
