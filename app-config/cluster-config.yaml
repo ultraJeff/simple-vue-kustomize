@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster-config
+  name: simple-vue-app
   namespace: openshift-gitops
 spec:
   destination:
@@ -10,8 +10,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: gitops/cluster-config/apps/rhel-edge-management
-    repoURL: https://github.com/tosin2013/sno-quickstarts.git
+    path: app
+    repoURL: https://github.com/tosin2013/simple-vue-kustomize.git
     targetRevision: main
   syncPolicy:
     automated:

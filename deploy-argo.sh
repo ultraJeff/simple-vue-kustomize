@@ -40,3 +40,4 @@ fi
 oc create namespace openshift-gitops
 oc create -f init/
 check_pods_running
+oc create -f app-config/cluster-config.yaml
