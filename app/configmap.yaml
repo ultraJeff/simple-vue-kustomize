@@ -5,6 +5,6 @@ labels:
    app.kubernetes.io/part-of: argocd
 metadata:
   name: argocd-cm
-  namespace: argocd
+  namespace: openshift-gitops
 data:
   kustomize.buildOptions: --enable-helm

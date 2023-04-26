@@ -1,0 +1,19 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simple-vue-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: user1-bgd
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: app
+    repoURL: https://github.com/tosin2013/simple-vue-kustomize.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
